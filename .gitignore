@@ -218,3 +218,29 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---  SPECIFIC RULES FOR ENERGY-CONSUMPTION-FORECASTING  ---
+
+# Raw and processed datasets
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Trained models
+models/*
+!models/.gitkeep
+
+# Generated reports
+reports/figures/*
+!reports/figures/.gitkeep
+
+# Model artifacts and temporary files
+*.keras
+*.h5
+*.pkl
+*.joblib
+
+# Environment and notebook outputs
+.env
+.DS_Store
